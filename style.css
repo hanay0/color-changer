@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 15% auto;
+    padding: 0 30%;
+}
+/* start fixed menu */
+.fixed-menu {
+    background-color: #333;
+    color: #EEE;
+    padding: 10px;
+    position: fixed;
+    left: -220px;
+    top: 0;
+    height: 100%;
+    width: 220px;
+    z-index: 9999;
+}
+
+.fixed-menu .fa-cog {
+    position: absolute;
+    right: -30px;
+    top: 90px;
+    background-color: #333;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}
+
+.fixed-menu .change-colors{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.fixed-menu .change-colors li {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.fixed-menu .change-colors [data-color="blue"]{
+    background-color: rgb(16, 114, 194);
+}
+
+.fixed-menu .change-colors [data-color="orange"]{
+    background-color: rgb(223, 136, 37);
+}
+
+.fixed-menu .change-colors [data-color="green"]{
+    background-color: rgb(70, 200, 98);
+}
+
+.fixed-menu .change-colors [data-color="purple"]{
+    background-color: rgb(96, 63, 187);
+}
+
+/* color themes */
+/* blue */
+[data-default-color="blue"] .skin-color {
+    color: rgb(16, 114, 194);
+}
+[data-default-color="blue"] .skin-background {
+    background-color: rgb(16, 114, 194);
+    color: #FFFFFF;
+}
+
+/* orange */
+[data-default-color="orange"] .skin-color {
+    color: rgb(223, 136, 37);
+}
+[data-default-color="orange"] .skin-background {
+    background-color: rgb(223, 136, 37);
+    color: #FFFFFF;
+}
+
+/* green */
+[data-default-color="green"] .skin-color {
+    color: rgb(70, 200, 98);
+}
+[data-default-color="green"] .skin-background {
+    background-color:rgb(70, 200, 98);
+    color: #FFFFFF;
+}
+
+/* purple */
+[data-default-color="purple"] .skin-color {
+    color: rgb(96, 63, 187);
+}
+[data-default-color="purple"] .skin-background {
+    background-color:rgb(96, 63, 187);
+    color: #FFFFFF;
+}
